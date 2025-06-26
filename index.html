@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework-10 | Nov Chandevith</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <style>
+    body{
+    background-color: #F0F0F2;
+}
+
+.fa-plus{
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    padding: 4.5px 5px;
+    font-size: 12px;
+    background-color: black;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.fa-plus:hover{
+    background-color: teal;
+}
+
+h3:hover{
+    color: teal;
+}
+
+h3 i{
+    color: rgba(196, 196, 196, 0.5);
+}
+
+.title{
+    position: relative;
+    margin-left: 20px;
+}
+
+.title .h4::before{
+    content: "\f19d" "";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    text-align: center;
+    font-size: 14px;
+    padding: 16px;
+    border-radius: 100%;
+    background-color: rgba(196, 196, 196, 0.5);
+    margin-right: 7px;
+    position: absolute;
+    left: 12px;
+    top: 5px;
+}
+
+.title .fs-5::before{
+    content: "\f715";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 33px;
+    position: absolute;
+    top: 59px;
+    left: 16px;
+    rotate: 51deg;
+    color: rgba(196, 196, 196, 0.5);
+}
+
+.experience{
+    position: relative;
+    margin-left: 20px;
+}
+
+.experience .h4::before{
+    content: "\f0b1" "";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    text-align: center;
+    font-size: 14px;
+    padding: 16px;
+    border-radius: 100%;
+    background-color: rgba(196, 196, 196, 0.5);
+    margin-right: 7px;
+    position: absolute;
+    left: 13.5px;
+    top: 5px;
+}
+
+.experience .fs-5::before{
+    content: "\f715";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 33px;
+    position: absolute;
+    top: 59px;
+    left: 16px;
+    rotate: 51deg;
+    color: rgba(196, 196, 196, 0.5);
+}
+  </style>
+  <body>
+    <section class="py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-8 mx-auto bg-white rounded-3">
+            <div class="card border-0">
+              <i class="fa-solid fa-plus text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+
+              <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Education</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">University</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Country</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-inline-flex gap-1"></div>
+              <div class="card-header border-bottom-0 bg-white">
+                <h3 class="my-4 ms-3 d-inline-block" data-bs-toggle="collapse" href="#Education" role="button" aria-expanded="false" aria-controls="Education">Education <i class="fa-solid fa-chevron-down fs-4"></i></h3>
+              </div>
+
+              <div class="collapse show" id="Education">
+                <div class="card-body">
+                  <div class="title px-4">
+                    <div class="h4 ms-5 ps-2">The University of Manchester- Manchester</div>
+                    <div class="fs-5 ms-5 ps-2">Master's degree in computer software engineering</div>
+                    <div class="text-secondary ms-5 mb-4 ps-2">October 2024 to December 2026</div>
+                  </div>
+                  <div class="title px-4">
+                    <div class="h4 ms-5 ps-2">The University of Manchester- Manchester</div>
+                    <div class="fs-5 ms-5 ps-2">Master's degree in computer software engineering</div>
+                    <div class="text-secondary ms-5 mb-4 ps-2">October 2024 to December 2026</div>
+                  </div>
+                  <div class="title px-4">
+                    <div class="h4 ms-5 ps-2">The University of Manchester- Manchester</div>
+                    <div class="fs-5 ms-5 ps-2">Master's degree in computer software engineering</div>
+                    <div class="text-secondary ms-5 mb-4 ps-2 pb-5">October 2024 to December 2026</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8 mx-auto bg-white rounded-3">
+            <div class="card border-0">
+              <i class="fa-solid fa-plus text-white" data-bs-toggle="modal" data-bs-target="#Experience"></i></i>
+
+              <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="Experience" tabindex="-1" aria-labelledby="Experience" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="Experience">Experience</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">University</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Country</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-inline-flex gap-1"></div>
+              <div class="card-header border-bottom-0 bg-white">
+                <h3 class="my-4 ms-3 d-inline-block" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Experience <i class="fa-solid fa-chevron-down fs-4"></i></h3>
+              </div>
+              
+              </div>
+              <div class="collapse show" id="collapseExample">
+                <div class="card card-body border-0">
+                  <div class="experience px-4">
+                    <div class="h4 ms-5 ps-2">Senior Software Engineer</div>
+                    <div class="fs-5 ms-5 ps-2">Google -American</div>
+                    <div class="text-secondary ms-5 mb-3 ps-2"> Novemver 2020 to December 2026</div>
+                    <div class="fs-6 ms-5 ps-2 mb-4">Work in Google is one of the beautiful experience I can do in my entire lift. There are a lot of interesting thin to learn and manager respect you time and your personality...</div>
+                  </div>
+                  <div class="experience px-4">
+                    <div class="h4 ms-5 ps-2">Senior Software Engineer</div>
+                    <div class="fs-5 ms-5 ps-2">Google -American</div>
+                    <div class="text-secondary ms-5 mb-3 ps-2"> Novemver 2020 to December 2026</div>
+                    <div class="fs-6 ms-5 ps-2 mb-4">Work in Google is one of the beautiful experience I can do in my entire lift. There are a lot of interesting thin to learn and manager respect you time and your personality...</div>
+                  </div>
+                  <div class="experience px-4">
+                    <div class="h4 ms-5 ps-2">Senior Software Engineer</div>
+                    <div class="fs-5 ms-5 ps-2">Google -American</div>
+                    <div class="text-secondary ms-5 mb-3 ps-2"> Novemver 2020 to December 2026</div>
+                    <div class="fs-6 ms-5 ps-2 mb-5">Work in Google is one of the beautiful experience I can do in my entire lift. There are a lot of interesting thin to learn and manager respect you time and your personality...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
